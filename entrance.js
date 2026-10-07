@@ -25,6 +25,8 @@
    history.scrollRestoration=previousRestoration;
    const heading=storefront.querySelector('h1');
    heading.setAttribute('tabindex','-1');
+   // This is a reading destination, not an interactive control.
+   heading.style.outline='none';
    heading.focus({preventScroll:true});
   },reduced?0:1900);
  });
