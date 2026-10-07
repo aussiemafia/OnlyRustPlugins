@@ -4,6 +4,7 @@
  const trigger=document.getElementById('enterWorld');
  const root=document.documentElement;
  let opening=false;
+ if(location.hash){entrance.hidden=true;root.classList.remove('has-entrance');storefront.inert=false;return;}
  // This entrance is intentionally shown on every fresh page visit.
  entrance.hidden=false;
  storefront.inert=true;
